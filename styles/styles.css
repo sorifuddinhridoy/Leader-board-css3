@@ -110,7 +110,31 @@ courses styles
     color: #AEAEAE;
 }
 .course-duration{
-    border-radius: 10px;
-    color:  #FF4A60;
-    background: #FFE4E8;;
+    border-radius: 15px;
+    color:#FF4A60;
+    background: #FFE4E8;
+    font-weight:600;
+    padding: 3px;
+}
+
+@media only screen and (max-width:688px) {
+        .players, .blogs, .courses{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .container{
+            width: 100%;
+        }
+        .player, .blog{
+            flex-direction: column;
+            align-items: center;
+        }
+}
+/* tablet device */
+@media screen and (min-width:688px) and (max-width:992px) {
+        .container{
+            width: 100%;
+        }
+        .players, .courses{
+            grid-template-columns: repeat(2,1fr);
+        }
 }
